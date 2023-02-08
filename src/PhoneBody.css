@@ -1,0 +1,9 @@
+.phone-body {
+  width: 375px;
+  height: 600px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background-color: #202635;
+}

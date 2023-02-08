@@ -1,0 +1,17 @@
+.header {
+  text-align: left;
+  color: #ffff;
+  font-family: "Muli", sans-serif;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.header-user {
+  font-size: 28px;
+  margin-bottom: 0px;
+}
+
+.grettings {
+  font-size: 14px;
+  margin-top: 5px;
+}

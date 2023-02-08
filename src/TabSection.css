@@ -1,0 +1,34 @@
+.rectangular-component {
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px 20px;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 12px;
+  font-size: 14px;
+  font-family: muil;
+  color: #262f40;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+}
+
+.tab.active {
+  background-color: #262f40;
+  color: white;
+}
+
+.tab-content {
+  padding: 20px;
+}

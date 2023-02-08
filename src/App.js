@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import PhoneBody from './PhoneBody';
+import Button from './Button';
+import Header from "./Header";
+import TabSection from './TabSection';
+import TaskItem from './TaskItem';
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PhoneBody>
+      <Header username="Nisarg" />
+      <TabSection />
+      <TaskItem />
+      <Button text="Click Me" />
+    </PhoneBody>
   );
 }
 
