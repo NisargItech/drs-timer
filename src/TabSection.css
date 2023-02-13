@@ -22,6 +22,7 @@
   color: #262f40;
   font-family: "Mulish", sans-serif;
   font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .tab.active {

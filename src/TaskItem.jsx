@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./TaskItem.css";
 import Scrollbars from "react-custom-scrollbars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisV } from "@fortawesome/free-solid-svg-icons";
-import { faFile } from "@fortawesome/free-solid-svg-icons";
+import { faFile, faCode } from "@fortawesome/free-solid-svg-icons";
 
 const TaskItem = ({ task }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <div className="task-item">
+    <div
+      className={`task-item animated-div ${isHovered ? "box" : ""}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <div className="task-icon">
-        <FontAwesomeIcon icon={faFile} />
+        <FontAwesomeIcon icon={faCode} />
       </div>
       <div className="task-details">
         <div className="task-title">{task.title}</div>
@@ -26,7 +32,7 @@ const TaskList = () => {
   const dummyData = [
     {
       id: 1,
-      title: "Project Meeting",
+      title: "Project Meeting Testing Long title ",
       subDetails: "Project A",
     },
     {
